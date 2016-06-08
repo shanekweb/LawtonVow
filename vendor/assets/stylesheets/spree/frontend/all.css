@@ -333,4 +333,6 @@ a.footer-mail {
 			    color:#ffffff;
 				}
 
-
+.stock-location {
+  display: none;
+}
