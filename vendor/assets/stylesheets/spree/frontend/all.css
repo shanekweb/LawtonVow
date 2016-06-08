@@ -21,6 +21,11 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+
+body {
+  padding-top: 50px;
+}
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -173,7 +178,7 @@ button a:hover {
 
 footer {
 	width: 100%;
-	background: #333;
+	background: #4abdac;
 	color: white;
 	clear: both;
 	margin-top: 10%;
@@ -336,3 +341,16 @@ a.footer-mail {
 .stock-location {
   display: none;
 }
+
+.nav-top-full {
+  background: #4abdac;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-default {
+  background: #4abdac;
+}
+
