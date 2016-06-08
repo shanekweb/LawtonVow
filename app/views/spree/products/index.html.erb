@@ -26,7 +26,7 @@
   <% @products.each do |product| %>
     <div style="border: 1px groove #999; border-radius: 5px;" class="row">
       <div class="col-md-3">
-          <%= image_tag('http://www.op-insight.co.uk/images/product/large/' + product.image_url + '.jpg', class: 'target_image') %>
+          <%= image_tag('https://dl.dropboxusercontent.com/u/28470473/Lawton/' + product.slug + '.jpg', class: 'target_image') %>
       </div>
 
       <div class="col-md-5">
@@ -35,7 +35,7 @@
       </div>
       <div class="col-md-4">
         <h3>Description</h3>
-        <p><%= product.short_description.gsub(/(#{@query})/i, '<span class="red">\1</span>').html_safe %></p>
+        <p><%= product.description %></p>
       </div>
     </div>
     <div style="clear:both;height:30px;"></div>

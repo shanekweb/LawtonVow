@@ -44,7 +44,7 @@
 			<% @products.where(sale: true).each do |e| %>
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-			      <%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + e.image_url + '.jpg'), e %>
+			      <%= link_to image_tag('https://dl.dropboxusercontent.com/u/28470473/Lawton/' + e.slug + '.jpg'), e %>
 			      <div class="caption">
 			        <h4><%= link_to truncate(e.name, length: 80), e %></h4>
 			        <p><button class="btn btn-primary">€<%= link_to e.price, e %></button></p>
@@ -65,7 +65,7 @@
 			<% @products.where(featured: true).each do |e| %>
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-			      <%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + e.image_url + '.jpg'), e %>
+			      <%= link_to image_tag('https://dl.dropboxusercontent.com/u/28470473/Lawton/' + e.slug + '.jpg'), e %>
 			      <div class="caption">
 			        <h4><%= link_to truncate(e.name, length: 80), e %></h4>
 			      
@@ -87,7 +87,7 @@
 			<% @products.where(latest: true).each do |e| %>
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-			      <%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + e.image_url + '.jpg'), e %>
+			      <%= link_to image_tag('https://dl.dropboxusercontent.com/u/28470473/Lawton/' + e.slug + '.jpg'), e %>
 			      <div class="caption">
 			        <h4><%= link_to truncate(e.name, length: 80), e %></h4>
 			     
