@@ -5,9 +5,9 @@
 
 <%= form_tag products_path, method: :get, class: "navbar-form navbar-right" do %>
   <div class="input-group">
-    <%= text_field_tag :search, params[:search], class: "form-control" %>
+    <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search" %>
     <span class="input-group-btn">
-      <%= submit_tag "Search", name: nil, class: "btn btn-primary" %>
+      <%= submit_tag ">", name: nil, class: "btn btn-primary" %>
     </span>
   </div>
 <% end %>
